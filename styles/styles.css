@@ -1,0 +1,132 @@
+:root {
+    --background: #fffffe;
+    --base-text: #272343;
+    --border: #e3f6f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, li, a, p {
+  font-family: "Poppins", serif;
+  font-size: 17px;
+}
+
+header { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+
+.navigation {
+    display:inline-flex;
+    justify-content: right;
+    font-size: 17px;
+    margin: 0;
+}
+
+.name {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 22px;
+  font-family: "Poppins", serif;
+  color: var(--base-text);
+  margin: 0;
+  cursor:default;
+}
+
+.nav-links {
+    list-style: none;
+    margin-right: 30px;
+    display: inline-flex;
+} 
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--base-text);
+    padding-right: 17px;
+}
+
+.nav-links a:hover {
+    color: #45b1cc;
+}  
+
+.gallery {
+  align-items: center;
+}
+
+img {
+  margin: 7px 10px;
+}
+
+.row {
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px 4px;
+    justify-content: center;
+    width: 100%;
+} 
+
+.column {
+    flex: 25%;
+    max-width: 30%;
+    padding: 1px 4px;
+} 
+
+.column img {
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  } 
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    } 
+  }  
+
+  footer {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 17px;
+    text-decoration: none;
+    color: var(--base-text);
+  } 
+
+  .underconst {
+    text-align: center;
+    margin-top: 30px;
+  } 
+
+  .about-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+  } 
+
+  .myimage {
+    max-width: 100%;
+    max-height:100%;
+  } 
+
+  .about {
+    font-size: 70px;
+  }
