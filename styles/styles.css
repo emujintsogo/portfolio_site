@@ -125,9 +125,13 @@ img {
 
   .underconst {
     text-align: center;
-    margin-top: 30px;
+    margin: 30px;
   } 
 
+  .underconst a {
+        color: #45b1cc;
+  }
+  
   .about-container {
     display:flex;
     align-items: center;
